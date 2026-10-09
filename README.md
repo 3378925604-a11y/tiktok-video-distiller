@@ -37,6 +37,17 @@
 # 方式1 · huggingface 官方（需可访问 huggingface.co）
 hf download Qwen/Qwen2.5-Omni-7B --local-dir ./Qwen2.5-Omni-7B
 
+## English
+
+**TikTok Video Distiller** — an offline Agent Skill: a TikTok link in, timestamped knowledge cards out.
+
+- Pipeline: link → download via yt-dlp (usually watermark-free) → local Qwen video understanding → Markdown knowledge cards with timestamped evidence
+- Runs **fully offline**; no cloud API
+- Install as an Agent Skill (Claude Code / OpenCode / Qoder): clone into your skills directory and say "蒸馏这个 TikTok 链接"
+
+The Chinese documentation above is the authoritative setup guide.
+
+
 # 方式2 · aifasthub 国内直链（快，支持断点续传，-C - 即续传）
 HF_ENDPOINT=https://aifasthub.com hf download Qwen/Qwen2.5-Omni-7B --local-dir ./Qwen2.5-Omni-7B
 # 单文件直链格式（浏览器/curl/wget 均可）：
